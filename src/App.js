@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Dashboard from "./Pages/Dashboard/index";
+import Appbar from "./Components/DashboardLayout/Appbar/index";
+import "./global.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        backgroundImage: `url("https://wallpapercave.com/wp/wp3183635.jpg")`,
+      }}
+    >
+      <Appbar />
+
+      <Dashboard />
     </div>
   );
 }
